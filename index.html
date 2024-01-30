@@ -14,7 +14,23 @@
 </head>
 <body>
     <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        Todo-List
+                    </h1>
+                </div>
 
+                <div class="col-12">
+                    <div>
+                        <ul class="list-unstyled ">
+                            <li v-for="task,index in tasksArray " :key="index">{{ task.task }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./js/script.js" type="text/javascript"></script>
 </body>
